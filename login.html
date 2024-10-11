@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Auth System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Registration Form -->
+    <div id="registration-page" class="container">
+        <h2>Register</h2>
+        <form id="registration-form">
+            <input type="text" id="register-username" placeholder="Username" required><br>
+            <input type="password" id="register-password" placeholder="Password" required><br>
+            <button type="submit" class="register-btn">Register</button>
+            <p><a href="#" id="to-login" class="white-link">Already have an account? Login here</a></p>
+        </form>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-page" class="container" style="display:none;">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Username" required><br>
+            <input type="password" id="login-password" placeholder="Password" required><br>
+            <button type="submit" class="login-btn">Login</button>
+            <p><a href="#" id="to-register" class="white-link">Don't have an account? Register here</a></p>
+        </form>
+    </div>
+
+    <!-- Secured Page -->
+    <div id="secured-page" class="container" style="display:none;">
+        <h2>Welcome to the Secured Page!</h2>
+        <p>This is a secured area. You are logged in.</p>
+        <button id="logout-btn" class="secured-btn">Logout</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
